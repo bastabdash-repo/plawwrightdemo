@@ -17,9 +17,9 @@ test('Basic Auth Test', async ({ }, testInfo) => {
     });
 
 
-    const pages= browser.pages();
+    const pages = browser.pages();
 
-     const page = pages[0];
+    const page = pages[0];
     //const page = await browser.newPage();
 
 
@@ -43,6 +43,7 @@ test('Basic Auth Test', async ({ }, testInfo) => {
     //Timout Syntax
     //  new Promise((resolve) => setTimeout(resolve, 10000));
     await page.waitForTimeout(5000);
+    //
 
 
 });
