@@ -1,0 +1,13 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.2",
+    "playwright": "^1.56.1"
+  }
+}

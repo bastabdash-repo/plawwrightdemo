@@ -1,0 +1,36 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",              // Source code folder
+    "outDir": "./dist",              // Compiled JS output folder
+
+    /* Environment Settings */
+    "module": "commonjs",            // Node.js uses CommonJS
+    "target": "es2017",              // Good balance for Node.js
+    "lib": ["esnext"],               // Modern JavaScript features
+    "types": ["node", "express"],    // Enable Node.js + Express types
+
+    /* Module Handling */
+    "esModuleInterop": true,         // ✅ Required for 'import express from "express";'
+    "moduleResolution": "node",      // Resolve like Node.js
+    "forceConsistentCasingInFileNames": true,
+
+    /* Outputs */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Strict Type Checking */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Extra Options */
+    "skipLibCheck": true,            // Skip library checks for faster build
+    "isolatedModules": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*.ts"],        // Include all .ts files in src/
+  "exclude": ["node_modules"]        // Don’t compile node_modules
+}
