@@ -43,7 +43,7 @@ test('Basic Auth Test', async ({ }, testInfo) => {
     //Timout Syntax
     //  new Promise((resolve) => setTimeout(resolve, 10000));
     await page.waitForTimeout(5000);
-    //hello world ne git
+    //hello world initial commit
 
 
 });
